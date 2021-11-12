@@ -307,7 +307,7 @@ UICorner_10.Parent = Underlay2
 
 -- Scripts:
 
-local function TBKDXFB_fake_script() -- Main.Boot 
+local function IKYJ_fake_script() -- Main.Boot 
 	local script = Instance.new('LocalScript', Main)
 
 	local TweenService = game:GetService("TweenService")
@@ -352,8 +352,8 @@ local function TBKDXFB_fake_script() -- Main.Boot
 	Tween2:Play()
 	
 end
-coroutine.wrap(TBKDXFB_fake_script)()
-local function YOMZSK_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(IKYJ_fake_script)()
+local function HEDKK_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -369,8 +369,8 @@ local function YOMZSK_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(YOMZSK_fake_script)()
-local function NJDND_fake_script() -- Main.Welcome 
+coroutine.wrap(HEDKK_fake_script)()
+local function IEAC_fake_script() -- Main.Welcome 
 	local script = Instance.new('LocalScript', Main)
 
 	local NameWelcome = script.parent.Background.NameWelcome
@@ -397,8 +397,8 @@ local function NJDND_fake_script() -- Main.Welcome
 	NameWelcome.Text = name
 	
 end
-coroutine.wrap(NJDND_fake_script)()
-local function XUFGCBM_fake_script() -- Fly1.Fly1Toggle 
+coroutine.wrap(IEAC_fake_script)()
+local function GOKMR_fake_script() -- Fly1.Fly1Toggle 
 	local script = Instance.new('LocalScript', Fly1)
 
 	local Fly1 = script.Parent
@@ -409,8 +409,8 @@ local function XUFGCBM_fake_script() -- Fly1.Fly1Toggle
 	
 	
 end
-coroutine.wrap(XUFGCBM_fake_script)()
-local function MWTNOLH_fake_script() -- ChatSpy1.ChatSpyToggle1 
+coroutine.wrap(GOKMR_fake_script)()
+local function IBGRGRC_fake_script() -- ChatSpy1.ChatSpyToggle1 
 	local script = Instance.new('LocalScript', ChatSpy1)
 
 	local ChatSpy1 = script.Parent
@@ -421,8 +421,8 @@ local function MWTNOLH_fake_script() -- ChatSpy1.ChatSpyToggle1
 	
 	
 end
-coroutine.wrap(MWTNOLH_fake_script)()
-local function XNHPB_fake_script() -- Faded.FadedToggle1 
+coroutine.wrap(IBGRGRC_fake_script)()
+local function NKOFDQL_fake_script() -- Faded.FadedToggle1 
 	local script = Instance.new('LocalScript', Faded)
 
 	local Faded = script.Parent
@@ -433,8 +433,8 @@ local function XNHPB_fake_script() -- Faded.FadedToggle1
 	
 	
 end
-coroutine.wrap(XNHPB_fake_script)()
-local function PEQXVO_fake_script() -- Main.GameDeterm1 
+coroutine.wrap(NKOFDQL_fake_script)()
+local function UMXXL_fake_script() -- Main.GameDeterm1 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==2788229376 then
@@ -471,10 +471,12 @@ local function PEQXVO_fake_script() -- Main.GameDeterm1
 		Tween1:Play()
 		Tween2:Play()
 		Tween3:Play()
+	else
+		
 	end
 end
-coroutine.wrap(PEQXVO_fake_script)()
-local function NIGTIF_fake_script() -- Notification1.NotificationSend 
+coroutine.wrap(UMXXL_fake_script)()
+local function IHRCYW_fake_script() -- Notification1.NotificationSend 
 	local script = Instance.new('LocalScript', Notification1)
 
 	local Notification1 = script.Parent
@@ -513,8 +515,8 @@ local function NIGTIF_fake_script() -- Notification1.NotificationSend
 	Notification1.Visible = false 
 	
 end
-coroutine.wrap(NIGTIF_fake_script)()
-local function AJWIZMQ_fake_script() -- Notification2.NotificationSend2 
+coroutine.wrap(IHRCYW_fake_script)()
+local function PEVHUK_fake_script() -- Notification2.NotificationSend2 
 	local script = Instance.new('LocalScript', Notification2)
 
 	if game.PlaceId ==2788229376 then
@@ -567,3 +569,4 @@ local function AJWIZMQ_fake_script() -- Notification2.NotificationSend2
 	
 	
 end
+coroutine.wrap(PEVHUK_fake_script)()
