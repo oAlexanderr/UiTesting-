@@ -1,1 +1,533 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Corner1 = Instance.new("UICorner")
+local MainUnderlay = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Background = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local NameWelcome = Instance.new("TextLabel")
+local WelcomeText = Instance.new("TextLabel")
+local Dahood = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Fly1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ChatSpy1 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Faded = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Notification1 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local NotiHead = Instance.new("TextLabel")
+local CountDown1 = Instance.new("TextLabel")
+local NotiMsg = Instance.new("TextLabel")
+local Underlay = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Notification2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local NotiHead2 = Instance.new("TextLabel")
+local CountDown2 = Instance.new("TextLabel")
+local NotiMsg2 = Instance.new("TextLabel")
+local Underlay2 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(32, 10, 53)
+Main.Position = UDim2.new(0.499955177, 0, 0.498920083, 0)
+Main.Size = UDim2.new(0, 20, 0, 20)
+
+Corner1.CornerRadius = UDim.new(0, 5)
+Corner1.Name = "Corner1"
+Corner1.Parent = Main
+
+MainUnderlay.Name = "MainUnderlay"
+MainUnderlay.Parent = Main
+MainUnderlay.AnchorPoint = Vector2.new(0.5, 0.5)
+MainUnderlay.BackgroundColor3 = Color3.fromRGB(84, 5, 124)
+MainUnderlay.Position = UDim2.new(0.497999996, 0, 0.5, 0)
+MainUnderlay.Size = UDim2.new(0, 235, 0, 394)
+MainUnderlay.Visible = false
+MainUnderlay.ZIndex = 0
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = MainUnderlay
+
+Background.Name = "Background"
+Background.Parent = Main
+Background.AnchorPoint = Vector2.new(0.5, 0.5)
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BackgroundTransparency = 1.000
+Background.Position = UDim2.new(0.497999996, 0, 0.502376378, 0)
+Background.Size = UDim2.new(0, 210, 0, 372)
+Background.Image = "rbxassetid://7960602488"
+Background.ImageTransparency = 1.000
+
+UICorner_2.CornerRadius = UDim.new(0, 20)
+UICorner_2.Parent = Background
+
+NameWelcome.Name = "NameWelcome"
+NameWelcome.Parent = Background
+NameWelcome.AnchorPoint = Vector2.new(0.5, 0.5)
+NameWelcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameWelcome.BackgroundTransparency = 1.000
+NameWelcome.Position = UDim2.new(0.5, 0, 0.115591399, 0)
+NameWelcome.Size = UDim2.new(0, 200, 0, 40)
+NameWelcome.Font = Enum.Font.Kalam
+NameWelcome.Text = ""
+NameWelcome.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameWelcome.TextScaled = true
+NameWelcome.TextSize = 14.000
+NameWelcome.TextTransparency = 1.000
+NameWelcome.TextWrapped = true
+
+WelcomeText.Name = "WelcomeText"
+WelcomeText.Parent = Background
+WelcomeText.AnchorPoint = Vector2.new(0.5, 0.5)
+WelcomeText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeText.BackgroundTransparency = 1.000
+WelcomeText.Position = UDim2.new(0.5, 0, 0.0537634417, 0)
+WelcomeText.Size = UDim2.new(0, 200, 0, 35)
+WelcomeText.Font = Enum.Font.Kalam
+WelcomeText.Text = " Welcome,"
+WelcomeText.TextColor3 = Color3.fromRGB(0, 0, 0)
+WelcomeText.TextScaled = true
+WelcomeText.TextSize = 14.000
+WelcomeText.TextTransparency = 1.000
+WelcomeText.TextWrapped = true
+
+Dahood.Name = "Dahood"
+Dahood.Parent = Main
+Dahood.AnchorPoint = Vector2.new(0.5, 0.5)
+Dahood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dahood.BackgroundTransparency = 1.000
+Dahood.Position = UDim2.new(0.5, 0, 0.5, 0)
+Dahood.Size = UDim2.new(0, 210, 0, 372)
+
+UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_3.Parent = Dahood
+
+Fly1.Name = "Fly1"
+Fly1.Parent = Dahood
+Fly1.BackgroundColor3 = Color3.fromRGB(84, 5, 124)
+Fly1.BackgroundTransparency = 1.000
+Fly1.Position = UDim2.new(0.547619164, 0, 0.311827958, 0)
+Fly1.Size = UDim2.new(0, 85, 0, 60)
+Fly1.Font = Enum.Font.Kalam
+Fly1.Text = "Fly"
+Fly1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly1.TextScaled = true
+Fly1.TextSize = 14.000
+Fly1.TextTransparency = 1.000
+Fly1.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 20)
+UICorner_4.Parent = Fly1
+
+ChatSpy1.Name = "ChatSpy1"
+ChatSpy1.Parent = Dahood
+ChatSpy1.BackgroundColor3 = Color3.fromRGB(84, 5, 124)
+ChatSpy1.BackgroundTransparency = 1.000
+ChatSpy1.Position = UDim2.new(0.547619164, 0, 0.752688169, 0)
+ChatSpy1.Size = UDim2.new(0, 85, 0, 60)
+ChatSpy1.Font = Enum.Font.Kalam
+ChatSpy1.Text = "ChatSpy"
+ChatSpy1.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChatSpy1.TextScaled = true
+ChatSpy1.TextSize = 14.000
+ChatSpy1.TextTransparency = 1.000
+ChatSpy1.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 20)
+UICorner_5.Parent = ChatSpy1
+
+Faded.Name = "Faded"
+Faded.Parent = Dahood
+Faded.BackgroundColor3 = Color3.fromRGB(84, 5, 124)
+Faded.BackgroundTransparency = 1.000
+Faded.Position = UDim2.new(0.547619164, 0, 0.529569864, 0)
+Faded.Size = UDim2.new(0, 85, 0, 60)
+Faded.Font = Enum.Font.Kalam
+Faded.Text = "Faded"
+Faded.TextColor3 = Color3.fromRGB(0, 0, 0)
+Faded.TextScaled = true
+Faded.TextSize = 14.000
+Faded.TextTransparency = 1.000
+Faded.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 20)
+UICorner_6.Parent = Faded
+
+Notification1.Name = "Notification1"
+Notification1.Parent = ScreenGui
+Notification1.AnchorPoint = Vector2.new(0.5, 0.5)
+Notification1.BackgroundColor3 = Color3.fromRGB(32, 10, 53)
+Notification1.LayoutOrder = 1
+Notification1.Position = UDim2.new(1.5, 0, 0.864000022, 0)
+Notification1.Size = UDim2.new(0, 200, 0, 65)
+
+UICorner_7.CornerRadius = UDim.new(0, 20)
+UICorner_7.Parent = Notification1
+
+NotiHead.Name = "NotiHead"
+NotiHead.Parent = Notification1
+NotiHead.AnchorPoint = Vector2.new(0.5, 0.5)
+NotiHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotiHead.BackgroundTransparency = 1.000
+NotiHead.BorderSizePixel = 0
+NotiHead.Position = UDim2.new(0.137500003, 0, 0.223076925, 0)
+NotiHead.Size = UDim2.new(0, 55, 0, 25)
+NotiHead.Font = Enum.Font.Kalam
+NotiHead.Text = "Notice"
+NotiHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotiHead.TextScaled = true
+NotiHead.TextSize = 14.000
+NotiHead.TextWrapped = true
+
+CountDown1.Name = "CountDown1"
+CountDown1.Parent = Notification1
+CountDown1.AnchorPoint = Vector2.new(0.5, 0.5)
+CountDown1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CountDown1.BackgroundTransparency = 1.000
+CountDown1.BorderSizePixel = 0
+CountDown1.Position = UDim2.new(0.912500322, 0, 0.792307675, 0)
+CountDown1.Size = UDim2.new(0, 35, 0, 27)
+CountDown1.Font = Enum.Font.Kalam
+CountDown1.Text = ""
+CountDown1.TextColor3 = Color3.fromRGB(255, 255, 255)
+CountDown1.TextScaled = true
+CountDown1.TextSize = 14.000
+CountDown1.TextWrapped = true
+
+NotiMsg.Name = "NotiMsg"
+NotiMsg.Parent = Notification1
+NotiMsg.AnchorPoint = Vector2.new(0.5, 0.5)
+NotiMsg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotiMsg.BackgroundTransparency = 1.000
+NotiMsg.BorderSizePixel = 0
+NotiMsg.Position = UDim2.new(0.5, 0, 0.5, 0)
+NotiMsg.Size = UDim2.new(0, 180, 0, 29)
+NotiMsg.Font = Enum.Font.Kalam
+NotiMsg.Text = "Z to toggle."
+NotiMsg.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotiMsg.TextScaled = true
+NotiMsg.TextSize = 14.000
+NotiMsg.TextWrapped = true
+
+Underlay.Name = "Underlay"
+Underlay.Parent = Notification1
+Underlay.AnchorPoint = Vector2.new(0.5, 0.5)
+Underlay.BackgroundColor3 = Color3.fromRGB(84, 5, 124)
+Underlay.Position = UDim2.new(0.460000008, 0, 0.630769253, 0)
+Underlay.Size = UDim2.new(0, 196, 0, 63)
+Underlay.ZIndex = 0
+
+UICorner_8.CornerRadius = UDim.new(0, 20)
+UICorner_8.Parent = Underlay
+
+Notification2.Name = "Notification2"
+Notification2.Parent = ScreenGui
+Notification2.AnchorPoint = Vector2.new(0.5, 0.5)
+Notification2.BackgroundColor3 = Color3.fromRGB(32, 10, 53)
+Notification2.LayoutOrder = 1
+Notification2.Position = UDim2.new(1.5, 0, 0.864000022, 0)
+Notification2.Size = UDim2.new(0, 200, 0, 65)
+Notification2.Visible = false
+
+UICorner_9.CornerRadius = UDim.new(0, 20)
+UICorner_9.Parent = Notification2
+
+NotiHead2.Name = "NotiHead2"
+NotiHead2.Parent = Notification2
+NotiHead2.AnchorPoint = Vector2.new(0.5, 0.5)
+NotiHead2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotiHead2.BackgroundTransparency = 1.000
+NotiHead2.BorderSizePixel = 0
+NotiHead2.Position = UDim2.new(0.5, 0, 0.223076925, 0)
+NotiHead2.Size = UDim2.new(0, 180, 0, 29)
+NotiHead2.Font = Enum.Font.Kalam
+NotiHead2.Text = ""
+NotiHead2.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotiHead2.TextScaled = true
+NotiHead2.TextSize = 14.000
+NotiHead2.TextWrapped = true
+
+CountDown2.Name = "CountDown2"
+CountDown2.Parent = Notification2
+CountDown2.AnchorPoint = Vector2.new(0.5, 0.5)
+CountDown2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CountDown2.BackgroundTransparency = 1.000
+CountDown2.BorderSizePixel = 0
+CountDown2.Position = UDim2.new(0.912500322, 0, 0.792307675, 0)
+CountDown2.Size = UDim2.new(0, 35, 0, 27)
+CountDown2.Font = Enum.Font.Kalam
+CountDown2.Text = ""
+CountDown2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CountDown2.TextScaled = true
+CountDown2.TextSize = 14.000
+CountDown2.TextWrapped = true
+
+NotiMsg2.Name = "NotiMsg2"
+NotiMsg2.Parent = Notification2
+NotiMsg2.AnchorPoint = Vector2.new(0.5, 0.5)
+NotiMsg2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotiMsg2.BackgroundTransparency = 1.000
+NotiMsg2.BorderSizePixel = 0
+NotiMsg2.Position = UDim2.new(0.5, 0, 0.5, 0)
+NotiMsg2.Size = UDim2.new(0, 180, 0, 29)
+NotiMsg2.Font = Enum.Font.Kalam
+NotiMsg2.Text = ""
+NotiMsg2.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotiMsg2.TextScaled = true
+NotiMsg2.TextSize = 14.000
+NotiMsg2.TextWrapped = true
+
+Underlay2.Name = "Underlay2"
+Underlay2.Parent = Notification2
+Underlay2.AnchorPoint = Vector2.new(0.5, 0.5)
+Underlay2.BackgroundColor3 = Color3.fromRGB(84, 5, 124)
+Underlay2.Position = UDim2.new(0.460000008, 0, 0.630769253, 0)
+Underlay2.Size = UDim2.new(0, 196, 0, 63)
+Underlay2.ZIndex = 0
+
+UICorner_10.CornerRadius = UDim.new(0, 20)
+UICorner_10.Parent = Underlay2
+
+-- Scripts:
+
+local function EIFEGIR_fake_script() -- Main.Boot 
+	local script = Instance.new('LocalScript', Main)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local Main = script.Parent
+	local MainUnderlay = script.Parent.MainUnderlay
+	local Background = script.parent.Background
+	local Corner1 = script.parent.Corner1
+	
+	local Rotate1 = TweenInfo.new(
+		1.15, -- The time the tween takes to complete
+		Enum.EasingStyle.Sine, -- The tween style.
+		Enum.EasingDirection.Out, -- EasingDirection
+		0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		2 -- Delay
+	)
+	
+	local Fade1 = TweenInfo.new(
+		.35, -- The time the tween takes to complete
+		Enum.EasingStyle.Sine, -- The tween style.
+		Enum.EasingDirection.Out, -- EasingDirection
+		0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	local Tween1 = TweenService:Create(Main, Rotate1, {Rotation = 360}) -- Creates the tween with the TweenInfo and what properties you want to change
+	Tween1:Play() -- Plays the tween
+	
+	wait(2.7)
+	Corner1.CornerRadius = UDim.new(0, 20)
+	Main:TweenSize(UDim2.new(0, 235, 0, 394))
+	
+	wait(1.2)
+	
+	MainUnderlay.Visible = true
+	MainUnderlay:TweenPosition(UDim2.new(0.472, 0, 0.52, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Elastic)
+	wait(.3)
+	
+	local Tween2 = TweenService:Create(Background, Fade1, {ImageTransparency = 0})
+	Tween2:Play()
+	
+end
+coroutine.wrap(EIFEGIR_fake_script)()
+local function VZRT_fake_script() -- Main.KeybindToggle 
+	local script = Instance.new('LocalScript', Main)
+
+	local open = true
+	local keystatus
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	keystatus=mouse.KeyDown:connect(function(key)
+		if key == "z" then
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
+					else
+				script.Parent.Visible = true
+	end
+	end
+	end)
+end
+coroutine.wrap(VZRT_fake_script)()
+local function ABOKGN_fake_script() -- Main.Welcome 
+	local script = Instance.new('LocalScript', Main)
+
+	local NameWelcome = script.parent.Background.NameWelcome
+	local WelcomeText = script.Parent.Background.WelcomeText
+	local name = game:GetService("Players").LocalPlayer.DisplayName
+	local TweenService = game:GetService(("TweenService"))
+	
+	
+	local Fade1 = TweenInfo.new(
+		.35, -- The time the tween takes to complete
+		Enum.EasingStyle.Sine, -- The tween style.
+		Enum.EasingDirection.Out, -- EasingDirection
+		0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	wait(5.1)
+	local Tween1 = TweenService:Create(WelcomeText, Fade1, {TextTransparency = 0})
+	Tween1:Play()
+	wait(.25)
+	local Tween2 = TweenService:Create(NameWelcome, Fade1, {TextTransparency = 0})
+	Tween2:Play()
+	NameWelcome.Text = name
+	
+end
+coroutine.wrap(ABOKGN_fake_script)()
+-- Fly1.Fly1Toggle is disabled.
+-- ChatSpy1.ChatSpyToggle1 is disabled.
+-- Faded.FadedToggle1 is disabled.
+local function IFMRUL_fake_script() -- Main.GameDeterm1 
+	local script = Instance.new('LocalScript', Main)
+
+	local Dahood = script.parent.Dahood
+	local Fly1 = Dahood.Fly1
+	local ChatSpy1 = Dahood.ChatSpy1
+	local Faded = Dahood.Faded
+	local ScriptFly1 = Dahood.Fly1.Fly1Toggle
+	local ScriptChat1 = Dahood.ChatSpy1.ChatSpyToggle1
+	local ScriptFaded1 = Dahood.Faded.FadedToggle1
+	local TweenService = game:GetService("TweenService")
+	if game.PlaceId ==2788229376 then
+		wait(6)
+		Dahood.Enabled = true
+		Fly1.Enabled = true
+		Faded.Enabled = true
+		ChatSpy1.Enabled = true
+		ScriptChat1.Disabled = false
+		ScriptFaded1.Disabled = false
+		ScriptFly1.Disabled = false
+		
+		
+	
+		local Fade1 = TweenInfo.new(
+			.35, -- The time the tween takes to complete
+			Enum.EasingStyle.Sine, -- The tween style.
+			Enum.EasingDirection.Out, -- EasingDirection
+			0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+			false, -- Reverse?
+			0 -- Delay
+		)
+		
+		local Tween1 = TweenService:Create(Fly1, Fade1, {TextTransparency = 0},  {BackgroundTransparency = 0.8})
+		local Tween1 = TweenService:Create(ChatSpy1, Fade1, {TextTransparency = 0},  {BackgroundTransparency = 0.8})
+		local Tween1 = TweenService:Create(Faded, Fade1, {TextTransparency = 0},  {BackgroundTransparency = 0.8})
+		Tween1:Play()
+	end
+end
+coroutine.wrap(IFMRUL_fake_script)()
+local function NIYUYCF_fake_script() -- Notification1.NotificationSend 
+	local script = Instance.new('LocalScript', Notification1)
+
+	local Notification1 = script.Parent
+	local CountDown1 = script.parent.CountDown1
+	local TS = game:GetService("TweenService")
+	wait(3.5)
+	Notification1.Visible = true
+	Notification1:TweenPosition(UDim2.new(0.897, 0, 0.864, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Back)
+	
+	wait(2.5)
+	CountDown1.Text = "(5)"
+	wait(1)
+	CountDown1.Text = ""
+	wait(.2)
+	CountDown1.Text = "(4)"
+	wait(1)
+	CountDown1.Text = ""
+	wait(.2)
+	CountDown1.Text = "(3)"
+	wait(1)
+	CountDown1.Text = ""
+	wait(.2)
+	CountDown1.Text = "(2)"
+	wait(1)
+	CountDown1.Text = ""
+	wait(.2)
+	CountDown1.Text = "(1)"
+	wait(.5)
+	CountDown1.Text = ""
+	
+	
+	Notification1:TweenPosition(UDim2.new(1.5, 0, 0.864, 0), Enum.EasingDirection.In, Enum.EasingStyle.Back)
+	
+	wait(2)
+	
+	Notification1.Visible = false 
+	
+end
+coroutine.wrap(NIYUYCF_fake_script)()
+local function ZKFIXWB_fake_script() -- Notification2.NotificationSend2 
+	local script = Instance.new('LocalScript', Notification2)
+
+	if game.PlaceId ==2788229376 then
+		print("Boot as normal!")
+	else
+		local Notification2 = script.Parent
+		local CountDown2 = script.parent.CountDown2
+		local NotiHead2 = script.parent.NotiHead2
+		local NotiMsg2 = script.parent.NotiMsg2
+		local NotificatoinSend1 = script.parent.parent.Notification1.NotificationSend
+		local TS = game:GetService("TweenService")
+		Notification2.Visible = true
+		NotificatoinSend1.Disabled = true
+		wait(3.5)
+	
+		Notification2:TweenPosition(UDim2.new(0.897, 0, 0.864, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Back)
+	
+		NotiHead2.Text = "Game not supported."
+		NotiMsg2.Text = "Shutting down."
+	
+		wait(1.5)
+		CountDown2.Text = "(5)"
+		wait(1)
+		CountDown2.Text = ""
+		wait(.2)
+		CountDown2.Text = "(4)"
+		wait(1)
+		CountDown2.Text = ""
+		wait(.2)
+		CountDown2.Text = "(3)"
+		wait(1)
+		CountDown2.Text = ""
+		wait(.2)
+		CountDown2.Text = "(2)"
+		wait(1)
+		CountDown2.Text = ""
+		wait(.2)
+		CountDown2.Text = "(1)"
+		wait(.5)
+		CountDown2.Text = ""
+	
+		Notification2:TweenPosition(UDim2.new(1.5, 0, 0.864, 0), Enum.EasingDirection.In, Enum.EasingStyle.Back)
+		wait(2)
+		Notification2.Visible = false
+		script.Parent.Parent.Parent.ScreenGui.Enabled = false
+	end
+	
+	
+	
+	
+	
+end
+coroutine.wrap(ZKFIXWB_fake_script)()
