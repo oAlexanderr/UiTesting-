@@ -32,7 +32,7 @@ local UICorner_10 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGUI
 ScreenGui.Enabled = true
 
 Main.Name = "Main"
