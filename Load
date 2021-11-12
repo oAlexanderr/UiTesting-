@@ -399,7 +399,7 @@ local function HPNFWU_fake_script() -- Main.Welcome
 	NameWelcome.Text = name
 	
 end
-coroutine.wrap(HPNFWU_fake_script)()
+
 local function VOBI_fake_script() -- Fly1.Fly1Toggle 
 	local script = Instance.new('LocalScript', Fly1)
 
@@ -577,4 +577,3 @@ local function YVEEWKB_fake_script() -- Notification2.NotificationSend2
 	
 	
 end
-coroutine.wrap(YVEEWKB_fake_script)()
