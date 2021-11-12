@@ -45,7 +45,6 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(32, 10, 53)
 Main.Position = UDim2.new(0.499955177, 0, 0.498920083, 0)
 Main.Size = UDim2.new(0, 20, 0, 20)
-Main.Draggable = true
 
 Corner1.CornerRadius = UDim.new(0, 5)
 Corner1.Name = "Corner1"
@@ -305,7 +304,7 @@ UICorner_10.Parent = Underlay2
 
 -- Scripts:
 
-local function EIFEGIR_fake_script() -- Main.Boot 
+local function GPHO_fake_script() -- Main.Boot 
 	local script = Instance.new('LocalScript', Main)
 
 	local TweenService = game:GetService("TweenService")
@@ -350,8 +349,8 @@ local function EIFEGIR_fake_script() -- Main.Boot
 	Tween2:Play()
 	
 end
-coroutine.wrap(EIFEGIR_fake_script)()
-local function VZRT_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(GPHO_fake_script)()
+local function ZGHZ_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -367,8 +366,8 @@ local function VZRT_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(VZRT_fake_script)()
-local function ABOKGN_fake_script() -- Main.Welcome 
+coroutine.wrap(ZGHZ_fake_script)()
+local function RTOJPZ_fake_script() -- Main.Welcome 
 	local script = Instance.new('LocalScript', Main)
 
 	local NameWelcome = script.parent.Background.NameWelcome
@@ -395,11 +394,11 @@ local function ABOKGN_fake_script() -- Main.Welcome
 	NameWelcome.Text = name
 	
 end
-coroutine.wrap(ABOKGN_fake_script)()
+coroutine.wrap(RTOJPZ_fake_script)()
 -- Fly1.Fly1Toggle is disabled.
 -- ChatSpy1.ChatSpyToggle1 is disabled.
 -- Faded.FadedToggle1 is disabled.
-local function IFMRUL_fake_script() -- Main.GameDeterm1 
+local function GVOYCPA_fake_script() -- Main.GameDeterm1 
 	local script = Instance.new('LocalScript', Main)
 
 	local Dahood = script.parent.Dahood
@@ -437,8 +436,8 @@ local function IFMRUL_fake_script() -- Main.GameDeterm1
 		Tween1:Play()
 	end
 end
-coroutine.wrap(IFMRUL_fake_script)()
-local function NIYUYCF_fake_script() -- Notification1.NotificationSend 
+coroutine.wrap(GVOYCPA_fake_script)()
+local function EHAG_fake_script() -- Notification1.NotificationSend 
 	local script = Instance.new('LocalScript', Notification1)
 
 	local Notification1 = script.Parent
@@ -477,8 +476,8 @@ local function NIYUYCF_fake_script() -- Notification1.NotificationSend
 	Notification1.Visible = false 
 	
 end
-coroutine.wrap(NIYUYCF_fake_script)()
-local function ZKFIXWB_fake_script() -- Notification2.NotificationSend2 
+coroutine.wrap(EHAG_fake_script)()
+local function MNUYRQL_fake_script() -- Notification2.NotificationSend2 
 	local script = Instance.new('LocalScript', Notification2)
 
 	if game.PlaceId ==2788229376 then
@@ -531,4 +530,4 @@ local function ZKFIXWB_fake_script() -- Notification2.NotificationSend2
 	
 	
 end
-coroutine.wrap(ZKFIXWB_fake_script)()
+coroutine.wrap(MNUYRQL_fake_script)()
