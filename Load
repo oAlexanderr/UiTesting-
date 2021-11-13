@@ -32,7 +32,8 @@ local UICorner_10 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Enabled = true
 ScreenGui.ResetOnSpawn = false
 
 Main.Name = "Main"
@@ -41,8 +42,8 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(32, 10, 53)
 Main.Position = UDim2.new(0.499955177, 0, 0.498920083, 0)
 Main.Size = UDim2.new(0, 20, 0, 20)
-Main.Active = true
 Main.Draggable = true
+Main.Active = true
 
 Corner1.CornerRadius = UDim.new(0, 5)
 Corner1.Name = "Corner1"
@@ -307,7 +308,7 @@ UICorner_10.Parent = Underlay2
 
 -- Scripts:
 
-local function BOVWM_fake_script() -- Main.Boot 
+local function VQYRL_fake_script() -- Main.Boot 
 	local script = Instance.new('LocalScript', Main)
 
 	local TweenService = game:GetService("TweenService")
@@ -352,8 +353,8 @@ local function BOVWM_fake_script() -- Main.Boot
 	Tween2:Play()
 	
 end
-coroutine.wrap(BOVWM_fake_script)()
-local function ZYYR_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(VQYRL_fake_script)()
+local function RKZVL_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -369,8 +370,8 @@ local function ZYYR_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(ZYYR_fake_script)()
-local function MNBUUHD_fake_script() -- Main.Welcome 
+coroutine.wrap(RKZVL_fake_script)()
+local function JLMU_fake_script() -- Main.Welcome 
 	local script = Instance.new('LocalScript', Main)
 
 	local NameWelcome = script.parent.Background.NameWelcome
@@ -397,8 +398,8 @@ local function MNBUUHD_fake_script() -- Main.Welcome
 	NameWelcome.Text = name
 	
 end
-coroutine.wrap(MNBUUHD_fake_script)()
-local function CNAYPQ_fake_script() -- Fly1.Fly1Toggle 
+coroutine.wrap(JLMU_fake_script)()
+local function NJQU_fake_script() -- Fly1.Fly1Toggle 
 	local script = Instance.new('LocalScript', Fly1)
 
 	local Fly1 = script.Parent
@@ -409,8 +410,8 @@ local function CNAYPQ_fake_script() -- Fly1.Fly1Toggle
 	
 	
 end
-coroutine.wrap(CNAYPQ_fake_script)()
-local function BTJANS_fake_script() -- ChatSpy1.ChatSpyToggle1 
+coroutine.wrap(NJQU_fake_script)()
+local function ZODHGY_fake_script() -- ChatSpy1.ChatSpyToggle1 
 	local script = Instance.new('LocalScript', ChatSpy1)
 
 	local ChatSpy1 = script.Parent
@@ -421,8 +422,8 @@ local function BTJANS_fake_script() -- ChatSpy1.ChatSpyToggle1
 	
 	
 end
-coroutine.wrap(BTJANS_fake_script)()
-local function BYTH_fake_script() -- Faded.FadedToggle1 
+coroutine.wrap(ZODHGY_fake_script)()
+local function CBMWBFC_fake_script() -- Faded.FadedToggle1 
 	local script = Instance.new('LocalScript', Faded)
 
 	local Faded = script.Parent
@@ -433,8 +434,8 @@ local function BYTH_fake_script() -- Faded.FadedToggle1
 	
 	
 end
-coroutine.wrap(BYTH_fake_script)()
-local function TQNMHT_fake_script() -- Main.GameDeterm1 
+coroutine.wrap(CBMWBFC_fake_script)()
+local function IFEPESQ_fake_script() -- Main.GameDeterm1 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==2788229376 then
@@ -464,20 +465,26 @@ local function TQNMHT_fake_script() -- Main.GameDeterm1
 			0 -- Delay
 		)
 		
-		local Tween1 = TweenService:Create(Fly1, Fade1, {TextTransparency = 0},  {BackgroundTransparency = 0.8})
-		local Tween2 = TweenService:Create(ChatSpy1, Fade1, {TextTransparency = 0},  {BackgroundTransparency = 0.8})
-		local Tween3 = TweenService:Create(Faded, Fade1, {TextTransparency = 0},  {BackgroundTransparency = 0.8})
+		local Tween1 = TweenService:Create(Fly1, Fade1, {TextTransparency = 0})
+		local Tween2 = TweenService:Create(ChatSpy1, Fade1, {TextTransparency = 0})
+		local Tween3 = TweenService:Create(Faded, Fade1, {BackgroundTransparency = 0.8})
+		local Tween4 = TweenService:Create(Fly1, Fade1, {BackgroundTransparency = 0.8})
+		local Tween5 = TweenService:Create(ChatSpy1, Fade1, {BackgroundTransparency = 0.8})
+		local Tween6 = TweenService:Create(Faded, Fade1, {BackgroundTransparency = 0.8})
 		wait(1)
 		Tween1:Play()
 		Tween2:Play()
 		Tween3:Play()
+		Tween4:Play()
+		Tween5:Play()
+		Tween6:Play()
 	else
 		
 		
 	end
 end
-coroutine.wrap(TQNMHT_fake_script)()
-local function JRLNRWA_fake_script() -- Notification1.NotificationSend1 
+coroutine.wrap(IFEPESQ_fake_script)()
+local function ARYCH_fake_script() -- Notification1.NotificationSend1 
 	local script = Instance.new('LocalScript', Notification1)
 
 	if game.PlaceId ==2788229376 then
@@ -523,8 +530,8 @@ local function JRLNRWA_fake_script() -- Notification1.NotificationSend1
 	
 	
 end
-coroutine.wrap(JRLNRWA_fake_script)()
-local function DQFE_fake_script() -- Notification2.NotificationSend2 
+coroutine.wrap(ARYCH_fake_script)()
+local function QRKPG_fake_script() -- Notification2.NotificationSend2 
 	local script = Instance.new('LocalScript', Notification2)
 
 	if game.PlaceId ==2788229376 then
@@ -576,4 +583,4 @@ local function DQFE_fake_script() -- Notification2.NotificationSend2
 	
 	
 end
-coroutine.wrap(DQFE_fake_script)()
+coroutine.wrap(QRKPG_fake_script)()
