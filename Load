@@ -586,7 +586,7 @@ local function SELHOLY_fake_script() -- Notification2.KillFunction
 	if game.PlaceId ==2788229376 then
 		print("Boot as noraml")
 	else
-		wait(13.5)
+		wait(112)
 		script.parent.parent.Enabled = false
 	end
 end
