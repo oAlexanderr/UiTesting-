@@ -43,7 +43,6 @@ Main.BackgroundColor3 = Color3.fromRGB(32, 10, 53)
 Main.Position = UDim2.new(0.499955177, 0, 0.498920083, 0)
 Main.Size = UDim2.new(0, 20, 0, 20)
 Main.Draggable = true
-Main.Active = true
 
 Corner1.CornerRadius = UDim.new(0, 5)
 Corner1.Name = "Corner1"
@@ -308,7 +307,7 @@ UICorner_10.Parent = Underlay2
 
 -- Scripts:
 
-local function VQYRL_fake_script() -- Main.Boot 
+local function MBYZHQB_fake_script() -- Main.Boot 
 	local script = Instance.new('LocalScript', Main)
 
 	local TweenService = game:GetService("TweenService")
@@ -353,8 +352,8 @@ local function VQYRL_fake_script() -- Main.Boot
 	Tween2:Play()
 	
 end
-coroutine.wrap(VQYRL_fake_script)()
-local function RKZVL_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(MBYZHQB_fake_script)()
+local function IWGUQ_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -370,8 +369,8 @@ local function RKZVL_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(RKZVL_fake_script)()
-local function JLMU_fake_script() -- Main.Welcome 
+coroutine.wrap(IWGUQ_fake_script)()
+local function NYSBC_fake_script() -- Main.Welcome 
 	local script = Instance.new('LocalScript', Main)
 
 	local NameWelcome = script.parent.Background.NameWelcome
@@ -398,8 +397,8 @@ local function JLMU_fake_script() -- Main.Welcome
 	NameWelcome.Text = name
 	
 end
-coroutine.wrap(JLMU_fake_script)()
-local function NJQU_fake_script() -- Fly1.Fly1Toggle 
+coroutine.wrap(NYSBC_fake_script)()
+local function VZVDPZ_fake_script() -- Fly1.Fly1Toggle 
 	local script = Instance.new('LocalScript', Fly1)
 
 	local Fly1 = script.Parent
@@ -410,8 +409,8 @@ local function NJQU_fake_script() -- Fly1.Fly1Toggle
 	
 	
 end
-coroutine.wrap(NJQU_fake_script)()
-local function ZODHGY_fake_script() -- ChatSpy1.ChatSpyToggle1 
+coroutine.wrap(VZVDPZ_fake_script)()
+local function ZIXCYJ_fake_script() -- ChatSpy1.ChatSpyToggle1 
 	local script = Instance.new('LocalScript', ChatSpy1)
 
 	local ChatSpy1 = script.Parent
@@ -422,8 +421,8 @@ local function ZODHGY_fake_script() -- ChatSpy1.ChatSpyToggle1
 	
 	
 end
-coroutine.wrap(ZODHGY_fake_script)()
-local function CBMWBFC_fake_script() -- Faded.FadedToggle1 
+coroutine.wrap(ZIXCYJ_fake_script)()
+local function NKNESAA_fake_script() -- Faded.FadedToggle1 
 	local script = Instance.new('LocalScript', Faded)
 
 	local Faded = script.Parent
@@ -434,27 +433,24 @@ local function CBMWBFC_fake_script() -- Faded.FadedToggle1
 	
 	
 end
-coroutine.wrap(CBMWBFC_fake_script)()
-local function IFEPESQ_fake_script() -- Main.GameDeterm1 
+coroutine.wrap(NKNESAA_fake_script)()
+local function BDEX_fake_script() -- Main.GameDeterm1 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==2788229376 then
-	local Dahood = script.parent.Dahood
-	local Fly1 = Dahood.Fly1
-	local ChatSpy1 = Dahood.ChatSpy1
-	local Faded = Dahood.Faded
-	local ScriptFly1 = Dahood.Fly1.Fly1Toggle
-	local ScriptChat1 = Dahood.ChatSpy1.ChatSpyToggle1
-	local ScriptFaded1 = Dahood.Faded.FadedToggle1
-	local TweenService = game:GetService("TweenService")
-	
-		wait(6)
+		local Dahood = script.parent.Dahood
+		local Fly1 = Dahood.Fly1
+		local Faded = Dahood.Faded	
+		local ChatSpy1 = Dahood.ChatSpy1
+		local TweenService = game:GetService("TweenService")
 		Dahood.Visible = true
 		Fly1.Visible = true
 		Faded.Visible = true
 		ChatSpy1.Visible = true
-		
-		
+		wait(6)
+	
+	
+	
 	
 		local Fade1 = TweenInfo.new(
 			.35, -- The time the tween takes to complete
@@ -464,10 +460,10 @@ local function IFEPESQ_fake_script() -- Main.GameDeterm1
 			false, -- Reverse?
 			0 -- Delay
 		)
-		
+	
 		local Tween1 = TweenService:Create(Fly1, Fade1, {TextTransparency = 0})
 		local Tween2 = TweenService:Create(ChatSpy1, Fade1, {TextTransparency = 0})
-		local Tween3 = TweenService:Create(Faded, Fade1, {BackgroundTransparency = 0.8})
+		local Tween3 = TweenService:Create(Faded, Fade1, {TextTransparency = 0})
 		local Tween4 = TweenService:Create(Fly1, Fade1, {BackgroundTransparency = 0.8})
 		local Tween5 = TweenService:Create(ChatSpy1, Fade1, {BackgroundTransparency = 0.8})
 		local Tween6 = TweenService:Create(Faded, Fade1, {BackgroundTransparency = 0.8})
@@ -479,12 +475,11 @@ local function IFEPESQ_fake_script() -- Main.GameDeterm1
 		Tween5:Play()
 		Tween6:Play()
 	else
-		
-		
+		print("none")
 	end
 end
-coroutine.wrap(IFEPESQ_fake_script)()
-local function ARYCH_fake_script() -- Notification1.NotificationSend1 
+coroutine.wrap(BDEX_fake_script)()
+local function JGQSFQ_fake_script() -- Notification1.NotiSend1 
 	local script = Instance.new('LocalScript', Notification1)
 
 	if game.PlaceId ==2788229376 then
@@ -530,14 +525,14 @@ local function ARYCH_fake_script() -- Notification1.NotificationSend1
 	
 	
 end
-coroutine.wrap(ARYCH_fake_script)()
-local function QRKPG_fake_script() -- Notification2.NotificationSend2 
+coroutine.wrap(JGQSFQ_fake_script)()
+local function CVVYT_fake_script() -- Notification2.NotiSend2 
 	local script = Instance.new('LocalScript', Notification2)
 
 	if game.PlaceId ==2788229376 then
 		print("Boot as normal!")
 	else
-		local ScreenGui = script.parent.Parent.Parent.ScreenGui
+		local Kill = script.parent.parent
 		local Notification2 = script.Parent
 		local CountDown2 = script.parent.CountDown2
 		local NotiHead2 = script.parent.NotiHead2
@@ -575,7 +570,7 @@ local function QRKPG_fake_script() -- Notification2.NotificationSend2
 		Notification2:TweenPosition(UDim2.new(1.5, 0, 0.864, 0), Enum.EasingDirection.In, Enum.EasingStyle.Back)
 		wait(2)
 		Notification2.Visible = false
-		ScreenGui.Enabled = false
+	
 	end
 	
 	
@@ -583,4 +578,15 @@ local function QRKPG_fake_script() -- Notification2.NotificationSend2
 	
 	
 end
-coroutine.wrap(QRKPG_fake_script)()
+coroutine.wrap(CVVYT_fake_script)()
+local function SELHOLY_fake_script() -- Notification2.KillFunction 
+	local script = Instance.new('LocalScript', Notification2)
+
+	if game.PlaceId ==2788229376 then
+		print("Boot as noraml")
+	else
+		wait(13.5)
+		script.parent.parent.Enabled = false
+	end
+end
+coroutine.wrap(SELHOLY_fake_script)()
